@@ -12,6 +12,14 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+function wrap (render) {
+  return function() {
+    return render.apply(this, arguments)
+      .replace('<code v-pre class="', '<code class="hljs ')
+      .replace('<code>', '<code class="hljs">')
+  }
+}
+
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 const createLintingRule = () => ({
