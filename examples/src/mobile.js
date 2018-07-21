@@ -6,10 +6,15 @@ import isMobile from './is-mobile.js'
 import registerRoute from './router.config'
 import navConfig from './nav.config'
 import 'packages/spui-css/src/index.css'
+import DemoList from './components/demo-list.vue'
 
 Vue.use(Vui)
 Vue.use(VueRouter)
 const routesConfig = registerRoute(navConfig, true)
+routesConfig.push({
+  path: '/',
+  component: DemoList
+})
 const router = new VueRouter({
   routes: routesConfig
 })
