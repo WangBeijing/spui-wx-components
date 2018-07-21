@@ -1,12 +1,19 @@
 import Vue from 'vue'
 import App from './App'
-import router from './router.config'
+import VueRouter from 'vue-router'
+// import router from './router.config'
 import '../../packages/spui-css/src/index.css'
 import spui from '../../src/index.js'
 import '../assets/docs.css'
-
+import registerRoute from './router.config'
+import navConfig from './nav.config'
 Vue.use(spui)
 Vue.config.productionTip = false
+
+const routesConfig = registerRoute(navConfig)
+const router = new VueRouter({
+  routes: routesConfig
+})
 
 /* eslint-disable */
 new Vue({
@@ -34,3 +41,5 @@ router.beforeEach((route, redirect, next) => {
   document.title = route.meta.title || document.title
   next()
 })
+
+
