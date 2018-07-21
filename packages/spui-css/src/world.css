@@ -1,0 +1,8 @@
+@b v-hello {
+    color: red;
+    transform: scale(1);
+  
+    @e message {
+      background: #0067ED;
+    }
+  }
