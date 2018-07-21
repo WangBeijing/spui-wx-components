@@ -21,6 +21,7 @@ const registerRoute = (navConfig, isMobile) => {
   let route = []
   // 目前只有中文版的文档
   let navs = navConfig['zh-CN']
+  console.log('navs', navs)
   // 遍历路由文件，逐一进行路由注册
   navs.forEach(nav => {
     if (isMobile && !nav.showInMobile) {
