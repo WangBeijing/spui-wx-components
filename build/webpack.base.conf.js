@@ -37,7 +37,9 @@ module.exports = {
   // 文件入口 
   entry: {
     'vendor': ['vue', 'vue-router'],
-    'spui': './examples/src/index.js'
+    'spui': './examples/src/index.js',
+    'spui': './examples/src/index.js',  // PC端入口js
+    'spui-mobile': './examples/src/mobile.js'  // 移动端入口js
   },
   // 输出目录
   output: {
@@ -165,6 +167,20 @@ module.exports = {
       chunks: ['manifest', 'vendor', 'spui'],
       template: 'examples/src/index.tpl',
       filename: 'index.html',
+      inject: true
+    }),
+    // PC端页面入口
+    new HtmlWebpackPlugin({
+      chunks: ['manifest', 'vendor', 'spui'],
+      template: 'examples/src/index.tpl',
+      filename: 'index.html',
+      inject: true
+    }),
+    // 移动端页面入口
+    new HtmlWebpackPlugin({
+      chunks: ['manifest', 'vendor', 'spui-mobile'],
+      template: 'examples/src/index.tpl',
+      filename: 'mobile.html',
       inject: true
     })
   ]
