@@ -1,6 +1,6 @@
 {
   "name": "spui-wx-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "spui-wx-components project",
   "author": "wwq",
   "scripts": {
@@ -96,7 +96,7 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "main": "lib/vui.js",
+  "main": "lib/spui.js",
   "files": [
     "lib",
     "src",

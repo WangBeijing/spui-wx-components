@@ -2,14 +2,14 @@
   <div class="page-header">
     <div class="page-header__top">
       <h1 class="page-header__logo">
-        <a href="#">Vui.js</a>
+        <a href="#">Spui Mobile</a>
       </h1>
       <ul class="page-header__navs">
         <li class="page-header__item">
-          <a href="/" class="page-header__link">组件</a>
+          <a href="/" class="page-header__link">文档</a>
         </li>
         <li class="page-header__item">
-          <a href="https://github.com/Brickies/vui" class="page-header__github" target="_blank"></a>
+          <a href="hhttps://www.baidu.com/" class="page-header__github" target="_blank"></a>
         </li>
         <li class="page-header__item">
           <span class="page-header__link"></span>

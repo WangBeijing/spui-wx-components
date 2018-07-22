@@ -10,7 +10,7 @@ gulp.task('compile', function () {
     // 进行css压缩
     .pipe(cssmin())
     // 输出到 './lib' 目录下
-    .pipe(gulp.dest('./lib'))
+    .pipe(gulp.dest('.../../lib'))
 })
 
 gulp.task('build', ['compile'])
