@@ -7,12 +7,13 @@ import App from './App'
 import registerRoute from './router.config'
 import navConfig from './nav.config'
 import isMobile from './is-mobile'
-import Vui from 'src/index.js'
+import spui from '@/index.js'
 import 'packages/spui-css/src/index.css'
 import '../assets/docs.css'
 
 Vue.config.productionTip = false
-Vue.use(Vui)
+console.log('spui', spui)
+Vue.use(spui)
 Vue.use(VueRouter)
 
 const routesConfig = registerRoute(navConfig)

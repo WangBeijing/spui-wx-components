@@ -36,3 +36,8 @@ npm run build:spui-css
             ├──index.css                    
             └──world.css
 ```
+
+## 3.发布npm 
+
+- **打包**入口`./src/index.js`，出口`./lib/index.js`
+- `lib/spui.js`此文件是`publish`到npm上的
