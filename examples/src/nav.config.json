@@ -1,7 +1,7 @@
 {
     "zh-CN": [
       {
-        "name": "Vui 组件",
+        "name": "Spui 组件",
         "showInMobile": true,
         "groups": [
           {
@@ -10,6 +10,19 @@
               {
                 "path": "/hello",
                 "title": "Hello"
+              },
+              {
+                "path": "/world",
+                "title": "world"
+              }
+            ]
+          },
+          {
+            "groupName": "业务组件",
+            "list": [
+              {
+                "path": "/button",
+                "title": "Button"
               }
             ]
           }
