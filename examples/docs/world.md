@@ -1,11 +1,10 @@
 ## world
-**world world 组件，Hello 组件，Hello 组件**
+**worl**
 ### 基本用法
 
 ```html
 <template>
   <div class="hello-page">
-    <v-hello message="my component library" @click="handleClick"></v-hello>
     <p>{{ msg }}</p>
   </div>
 </template>
@@ -18,9 +17,6 @@ export default {
     }
   },
   methods: {
-    handleClick (msg) {
-      this.msg = msg
-    }
   }
 }
 </script>

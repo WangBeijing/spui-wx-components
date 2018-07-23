@@ -5,7 +5,7 @@
 ```html
 <template>
   <div class="hello-page">
-    <v-hello message="my component library" @click="handleClick"></v-hello>
+    <v-world message="my component library" @click="handleClick"></v-world>
     <p>{{ msg }}</p>
   </div>
 </template>

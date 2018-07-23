@@ -42,6 +42,7 @@ router.beforeEach((route, redirect, next) => {
 
   const pathname = '/mobile.html'
   if (isMobile) {
+    console.log(pathname)
     window.location.replace(pathname)
     return
   }
