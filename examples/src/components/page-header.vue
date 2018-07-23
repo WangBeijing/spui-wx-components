@@ -65,7 +65,7 @@ export default {
         /* width: 78px; */
         height: 40px;
         line-height: 40px;
-        background-image: url(https://raw.githubusercontent.com/xuqiang521/vui/master/src/assets/logo.png);
+        background-image: url(https://cn.vuejs.org/images/logo.png);
         background-size: contain;
         background-repeat: no-repeat;
         margin: 10px 0 0 20px;

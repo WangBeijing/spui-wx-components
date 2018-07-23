@@ -37,14 +37,13 @@ module.exports = {
   // 文件入口 
   entry: {
     'vendor': ['vue', 'vue-router'],
-    'spui': './examples/src/index.js',
     'spui': './examples/src/index.js',  // PC端入口js
     'spui-mobile': './examples/src/mobile.js'  // 移动端入口js
   },
   // 输出目录
   output: {
     path: path.join(__dirname, '../examples/dist'),
-    publicPath: '/',
+    publicPath: './',
     filename: '[name].js'
   },
   resolve: {
@@ -62,7 +61,6 @@ module.exports = {
   // 延用原先的大部分配置
   module: {
     rules: [
-      // 原先的配置...
       // 整合webpack.dev.conf.js中css相关配置
       ...utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true }),
       {
@@ -161,14 +159,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-    // 页面主入口
-    new HtmlWebpackPlugin({
-      chunks: ['manifest', 'vendor', 'spui'],
-      template: 'examples/src/index.tpl',
-      filename: 'index.html',
-      inject: true
-    }),
+    new webpack.NoEmitOnErrorsPlugin(),    
     // PC端页面入口
     new HtmlWebpackPlugin({
       chunks: ['manifest', 'vendor', 'spui'],
