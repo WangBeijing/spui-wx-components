@@ -41,3 +41,12 @@ npm run build:spui-css
 
 - **打包**入口`./src/index.js`，出口`./lib/index.js`
 - `lib/spui.js`此文件是`publish`到npm上的
+
+## 4.使用教程
+
+```
+import Vue from 'vue'
+import spui from 'spui-wx-components'
+Vue.use(spui)
+import 'spui-wx-components/lib/spui-css/index.css'
+```

@@ -10,9 +10,9 @@ import isMobile from './is-mobile'
 import spui from '@/index.js'
 import 'packages/spui-css/src/index.css'
 import '../assets/docs.css'
+import Intro from '../docs/intro.md'
 
 Vue.config.productionTip = false
-console.log('spui', spui)
 Vue.use(spui)
 Vue.use(VueRouter)
 
@@ -26,7 +26,11 @@ routesConfig.push({
   path: '/component',
   redirect: '/component/intro'
 })
-
+routesConfig.push({
+  path: '/component/intro',
+  component: Intro
+})
+console.log(routesConfig)
 const router = new VueRouter({
   base: isProduction ? '/' : __dirname,
   routes: routesConfig

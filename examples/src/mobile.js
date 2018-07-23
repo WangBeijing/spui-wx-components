@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MobileApp from './MobileApp'
-import Vui from 'src/index'
+import Spui from 'src/index'
 import isMobile from './is-mobile.js'
 import registerRoute from './router.config'
 import navConfig from './nav.config'
 import 'packages/spui-css/src/index.css'
 import DemoList from './components/demo-list.vue'
 
-Vue.use(Vui)
+Vue.use(Spui)
 Vue.use(VueRouter)
 const routesConfig = registerRoute(navConfig, true)
 routesConfig.push({

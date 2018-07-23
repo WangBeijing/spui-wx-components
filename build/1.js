@@ -26,7 +26,7 @@ module.exports = {
   entry: {
     // app: './src/main.js'
     'vendor':['vue', 'vue-router'],
-    'vui': './examples/src/index.js'
+    'spui': './examples/src/index.js'
   },
   plugins: [
     // 将入口改成examples/src/index.tpl

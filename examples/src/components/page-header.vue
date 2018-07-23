@@ -9,7 +9,7 @@
           <a href="/" class="page-header__link">文档</a>
         </li>
         <li class="page-header__item">
-          <a href="hhttps://www.baidu.com/" class="page-header__github" target="_blank"></a>
+          <a href="https://www.baidu.com/" class="page-header__github" target="_blank"></a>
         </li>
         <li class="page-header__item">
           <span class="page-header__link"></span>
@@ -124,7 +124,7 @@ export default {
       width: 22px;
       height: 60px;
       overflow: hidden;
-      background-image: url(https://img.yzcdn.cn/upload_files/2017/03/30/Fil9peDfgzvk3kj-oFCsElS4FS1x.png);
+      background-image: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/base/loading_72b1da62.gif);
       background-size: contain;
       background-repeat: no-repeat;
       background-position-y: 17px;
