@@ -49,7 +49,7 @@ export default {
     padding-top: 40px;
     height: 0;
     overflow: hidden;
-    background: url(https://raw.githubusercontent.com/xuqiang521/vui/master/src/assets/logo.png) center center no-repeat;
+    background: url(https://cn.vuejs.org/images/logo.png) center center no-repeat;
     background-size: 40px 40px;
     margin-bottom: 10px;
   }
